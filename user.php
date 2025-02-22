@@ -33,7 +33,39 @@
                 <ul class="nav">
                     <h1>To-do List</h1>
                 </ul>
-                <button class="add">Add</button>
+                <button class="add" data-bs-toggle="modal" data-bs-target="#mymodal">Add</button>
+
+                <div style="margin-top: 150px;" class="modal fade" id="mymodal">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                      <div class="modal-header">
+                        <h4 class="modal-title">Create a To-do list</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+                      </div>
+
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                          <form class="content" method="post">
+                          <div class="row m-0 p-0">
+
+                            <div class="col-12 mb-2 in_content">
+                              <textarea type="text" name="title" id="title" placeholder="I want to..." class="form-control title"></textarea>
+                            </div>
+
+                          </div>
+                          </form>
+                      </div>
+
+                      <div class="modal-footer mx-4">
+                         <button type="submit" class="save" name="save">Save</button>
+                     </div>
+
+                    </div>
+                  </div>
+                </div>
+
             </div>
         </div>
     </div>

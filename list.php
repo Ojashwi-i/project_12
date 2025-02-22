@@ -36,12 +36,14 @@
 
                 <button class="add" data-bs-toggle="modal" data-bs-target="#mymodal">Add</button>
 
-                <div class="modal fade" id="mymodal">
+                <div style="margin-top: 150px;" class="modal fade" id="mymodal">
                   <div class="modal-dialog modal-lg">
                     <div class="modal-content">
 
                       <div class="modal-header">
                         <h4 class="modal-title">Create a To-do list</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
                       </div>
 
                       <!-- Modal body -->
@@ -55,7 +57,11 @@
 
                           </div>
                           </form>
-                        </div>
+                      </div>
+
+                      <div class="modal-footer mx-4">
+                         <button type="submit" class="save" name="save">Save</button>
+                     </div>
 
                     </div>
                   </div>
