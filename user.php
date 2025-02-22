@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/03afbd77fe.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="user.css">
     <title>To-do list</title>
 </head>
 
-<body>
+<body style="background-color: #97c9b9;">
     <div class="main">
         <div class="row mb-0 mx-0 mt-5 p-0">
             <div class="col-3 m-0 profile_container">
@@ -30,9 +31,11 @@
                 </div>
             </div>
             <div class="col-9 m-0 sections_container">
+
                 <ul class="nav">
                     <h1>To-do List</h1>
                 </ul>
+
                 <button class="add" data-bs-toggle="modal" data-bs-target="#mymodal">Add</button>
 
                 <div style="margin-top: 150px;" class="modal fade" id="mymodal">
@@ -66,7 +69,17 @@
                   </div>
                 </div>
 
-            </div>
+                <div class="list-group">
+                    <div class="list">
+                        <button class="tick"><i class="fa-solid fa-check"></i></button>
+                         <p style="display:inline;">
+                            I want to complete my homework by 7
+                         </p>
+                         <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                         <button class="trash"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                 </div>
+
         </div>
     </div>
 </body>
