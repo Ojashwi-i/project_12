@@ -122,11 +122,6 @@
   .nav-item{
     margin: 0px 0px 0px 50px;
   }
-  
-  .list{
-    margin: 150px 0px 0px 0px;
-    text-align: center;
-  }
 
   .add{
     border-radius: 5px;
@@ -147,21 +142,4 @@
     outline: none;
   }
 
-  .content {
-    position: relative;
-    background-color: #ffffff;
-  }
-
-  .in_content {
-    border-radius: 5px;
-    font-size: 5px;
-  }
   
-  .title {
-    height: 6vw;
-    resize: none;
-    border: none;
-    font-weight: 600;
-    font-size: 4em;
-    background-color: #d7e7ec;
-  }
