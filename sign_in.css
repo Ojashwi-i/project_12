@@ -1,5 +1,5 @@
 body {
-    background-color: #12c086;
+    background-color: #97c9b9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -9,69 +9,37 @@ body {
     height: 350px;
     background-color: white;
     border-radius: 10px;
-    margin: 200px auto 0;
+    margin: 180px auto 0;
 }
 
 a {
-    color: #12c086;
+    color: #0d8c62;
 }
 
 input {
     width: 434px;
     height: 30px;
     border-radius: 6px;
-    border: 2px solid black;
+    border: 2px solid #0d8c62;
 }
 
 .button1 {
     margin-top: 20px;
     width: 150px;
     height: 30px;
-    background-color: #12c086;
+    background-color: #0d8c62;
     border-radius: 25px;
     color: white;
     font-size: 15px;
-    border: 2px solid #12c086;
+    border: 2px solid #0d8c62;
     cursor: pointer;
 }
 
 .button1:hover{
-    background-color: #0d8c62;
-    border: 2px solid #0d8c62;
+    background-color: #12c086;
+    /* border: 2px solid #12c086; */
   }
 
 .button1:focus-visible{
     outline: none;
   }
-
-.line1 {
-    border: 1px solid #e2dfdf;
-    height: 0px;
-    width: 180px;
-    margin-top: 30px;
-}
-
-.line2 {
-    margin-left:30px;
-    border: 1px solid #e2dfdf;
-    height: 0px;
-    width: 180px;
-    margin-top: 30px;
-}
-
-.button2 {
-    margin-left: 20px;
-    width: 400px;
-    height: 40px;
-    border-radius: 25px;
-    border: 2px solid black;
-    background-color: white;
-    position: relative;
-}
-
-.icon {
-    position: absolute;
-    margin-left: -380px;
-    margin-top: 10px;
-    font-size: 20px;
-}

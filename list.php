@@ -11,7 +11,7 @@
     <title>To-do list</title>
 </head>
 
-<body>
+<body style="background-color: #97c9b9;">
     <div class="main">
         <div class="row mb-0 mx-0 mt-5 p-0">
             <div class="col-3 m-0 profile_container">
@@ -67,7 +67,7 @@
                   </div>
                 </div>
 
-                <div class="list">
+                <div class="quote">
                 <h6>Don't want to forget anything?</h6>
                 <h1 style="margin: 0px 0px 60px;">Create a To-Do List !</h1>
                 </div>
