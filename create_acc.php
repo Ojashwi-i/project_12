@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do list</title>
     <link rel="stylesheet" href="create_acc.css">
-    <script src="https://kit.fontawesome.com/03afbd77fe.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -32,7 +31,7 @@
                         <input class="input2" type="text"> <br>
                         <label for="password">Password</label> <br>
                         <input class="input2" type="password"> <br>
-                        <input type="submit" class="button1">
+                        <button name="send" class="button1">Send</button>
                     </form>
                 </div>
         </div>
