@@ -1,0 +1,121 @@
+.main {
+    margin: 0px 55px;
+  }
+  
+  .profile_container {
+    padding: 0px 10px 0px 0px;
+    background-color: white;
+  }
+  
+  .profile {
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px 3px #c1c1c1;
+    height: 455px;
+    padding: 80px 15px 0px;
+  }
+  
+  .profile h3 {
+    margin: 12px 0px 0px 0px;
+    text-align: center;
+    letter-spacing: -1px;
+    font-weight: 650;
+  }
+  
+  .main_name {
+    margin: -20px 0px 0px 0px;
+    text-align: center;
+  }
+  
+  .info {
+    margin: 20px 0px 0px 0px;
+    padding: 6px 5px 6px;
+    border-radius: 8px;
+    border: 2px solid #c1c1c1;
+  }
+  
+  .info h6 {
+    margin: 0px 0px 8px 0px;
+  }
+  
+  .number {
+    width: 100px;
+    text-align: right;
+  }
+  
+  .info p {
+    color: #797979;
+    font-size: 14px;
+    margin: 3px 0px 0px;
+  }
+  
+  .date {
+    width: 85px;
+  }
+  
+  .btns {
+    text-align: center;
+    margin: 30px 0px;
+  }
+  
+  .btn1 {
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #12c086;
+    width: 100%;
+    padding: 3px 0px;
+  }
+  
+  .btn2 {
+    margin: 8px 0px 0px;
+    border: 2px solid #12c086;
+    border-radius: 25px;
+    color: #12c086;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: white;
+    width: 100%;
+    padding: 3px 0px;
+  }
+  
+  .sections_container {
+    padding: 0px 0px 0px 25px;
+  }
+  
+  .nav{
+    border-bottom: 2px solid #c4c4c4;
+    justify-content: center;
+  }
+  
+  .nav-link{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .nav-link:hover{
+    color: black;
+  }
+  
+  .nav-item{
+    margin: 0px 0px 0px 50px;
+  }
+  
+  .list{
+    margin: 150px 0px 0px 0px;
+    text-align: center;
+  }
+
+  .add{
+    border-radius: 5px;
+    background-color: #12c086;
+    border: 2px solid #12c086;
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+    float: right;
+  }
+
+  
