@@ -1,3 +1,22 @@
+<?php include 'connection.php' ?>
+
+<?php
+        if(isset($_GET['id'])){
+            $id = $_GET['id'];
+            // echo $id;
+        }
+
+        if (isset($_POST['save'])) { 
+            $list = $_POST['list'];
+            $sql = "INSERT INTO `list` (`list`, `login_id`) VALUES ('$list','$id')";
+            $query = $conn->query($sql);
+            if ($query) {
+                header('location:user.php?id='.urlencode($id));
+            }
+             
+        }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,16 +35,31 @@
         <div class="row mb-0 mx-0 mt-5 p-0">
             <div class="col-3 m-0 profile_container">
                 <div class="profile">
-                    <h3>First_last name</h3><br>
-                    <h6 class="main_name">@username</h6>
-                    <div class="info">
-                        <div class="d-flex">
-                            <h6>Email: </h6>
-                        </div>
-                    </div>
+                <?php    
+                        $sql = "SELECT * FROM `login` WHERE login_id=$id";
+                            $result = $conn->query($sql);
+                            // echo "<pre>";
+                            // print_r($result);
+
+                            if ($result->num_rows > 0) {
+                                while ($row = $result->fetch_assoc()) { ?>
+                                    <h3><?php echo $row['fname']." ".$row['lname'] ?></h3><br>
+                                    <h6 class="main_name">@<?php echo $row['uname'] ?></h6>
+                                    <div class="info">
+                                        <div class="d-flex">
+                                            <h6>Email: <?php echo $row['email'] ?></h6>
+                                        </div>
+                                    </div>
+                        <?php
+                                }
+                            } 
+                    
+                        ?>
+
                     <div class="btns">
                         <button class="btn1">Edit profile</button> <br>
-                        <button class="btn2">Change Password</button>
+                        <button class="btn1">Change Password</button> <br>
+                        <button name="log_out" onclick="log_out();" class="btn1">Log Out</button>
                     </div>
                 </div>
             </div>
@@ -48,21 +82,21 @@
 
                       <!-- Modal body -->
                       <div class="modal-body">
-                          <form class="content" method="post">
+                        <form class="content" method="post">
                           <div class="row m-0 p-0">
 
                             <div class="col-12 mb-2 in_content">
-                              <textarea type="text" name="title" id="title" placeholder="I want to..." class="form-control title"></textarea>
+                              <textarea type="text" name="list" placeholder="I want to..." class="form-control title"></textarea>
                             </div>
 
                           </div>
-                          </form>
-                      </div>
-
-                      <div class="modal-footer mx-4">
-                         <button type="submit" class="save" name="save">Save</button>
-                     </div>
-
+                        </div>
+                        
+                        <div class="modal-footer mx-4">
+                            <button class="save" name="save">Save</button>
+                        </div>
+                        </form>
+                        
                     </div>
                   </div>
                 </div>
@@ -76,5 +110,11 @@
         </div>
     </div>
 </body>
+
+<script type="text/javascript">
+    function log_out(){
+        window.location.href = 'sign_in.php';
+    }
+</script>
 
 </html>
