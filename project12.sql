@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 06, 2025 at 08:38 AM
+-- Generation Time: Mar 06, 2025 at 08:46 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -44,6 +44,32 @@ INSERT INTO `list` (`id`, `list`, `login_id`) VALUES
 (30, 'dddddddddddddddd', 34),
 (32, 'I want to complete my homework by 7', 36);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `login`
+--
+
+CREATE TABLE `login` (
+  `login_id` int(11) NOT NULL,
+  `fname` varchar(30) DEFAULT NULL,
+  `lname` varchar(30) DEFAULT NULL,
+  `uname` varchar(30) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `password` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `login`
+--
+
+INSERT INTO `login` (`login_id`, `fname`, `lname`, `uname`, `email`, `password`) VALUES
+(32, 'Cora Finch', 'Reese Hodge', 'Blythe Boyer', 'sevanuboh@mailinator.com', 'Pa$$w0rd!'),
+(33, 'ojashwi', 'shah', 'ojashwioi', 'ojashwishah@gmail.com', '12345'),
+(34, 'MacKensie Wood', 'Xyla Clemons', 'Zeus Hammond', 'helan@mailinator.com', 'Pa$$w0rd!'),
+(35, 'Brianna Nichols', 'Ginger David', 'Raphael Maynard', 'vyhives@mailinator.com', 'Pa$$w0rd!'),
+(36, 'ram', 'thapa', 'ramth_123', 'ramthapa@gmail.com', '12345');
+
 --
 -- Indexes for dumped tables
 --
@@ -56,6 +82,12 @@ ALTER TABLE `list`
   ADD KEY `login_id` (`login_id`);
 
 --
+-- Indexes for table `login`
+--
+ALTER TABLE `login`
+  ADD PRIMARY KEY (`login_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -64,6 +96,12 @@ ALTER TABLE `list`
 --
 ALTER TABLE `list`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+
+--
+-- AUTO_INCREMENT for table `login`
+--
+ALTER TABLE `login`
+  MODIFY `login_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- Constraints for dumped tables
