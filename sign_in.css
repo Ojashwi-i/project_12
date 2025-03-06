@@ -48,7 +48,7 @@ input {
     font-size: 15px;
     float: left;
     color: red;
-    display: block;
+    width: 100%;
   }
 
   .alert{

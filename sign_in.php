@@ -49,7 +49,7 @@
 
 <body>
         <div style="display:none;" id="alert" class="alert">
-          This is a danger alert—check it out!
+          The account doesn't exist or you have entered the wrong information!
         </div>
         <div class="rectangle1">
                 <div style="position: absolute; margin: 0px 30px">
@@ -58,10 +58,10 @@
                     <form method="post">
                         <label for="email">Email Address</label> <br>
                         <input name="email" type="text"> <br>
-                        <span><?php echo $vemail."<br>"; ?></span>
+                        <span><?php echo $vemail; ?></span>
                         <label for="password">Password</label> <br>
-                        <input name="password" type="password">
-                        <span><?php echo $vpassword; ?></span> <br>
+                        <input name="password" type="password"> <br>
+                        <span><?php echo $vpassword; ?></span>
                         <button name="send" class="button1">Send</button>
                     </form>
                 </div>
