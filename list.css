@@ -53,6 +53,7 @@
     width: 100%;
     padding: 3px 0px;
     border: 2px solid #0d8c62;
+    margin-bottom: 8px;
   }
 
   .btn1:hover{
@@ -61,28 +62,6 @@
   }
 
   .btn1:focus-visible{
-    outline: none;
-  }
-  
-  .btn2 {
-    margin: 8px 0px 0px;
-    border: none;
-    border-radius: 25px;
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #0d8c62;
-    width: 100%;
-    padding: 3px 0px;
-    border: 2px solid #0d8c62;
-  }
-
-  .btn2:hover{
-    background-color: #12c086;
-    /* border: 2px solid #12c086; */
-  }
-
-  .btn2:focus-visible{
     outline: none;
   }
   
